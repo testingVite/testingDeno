@@ -20,10 +20,10 @@ export default function App(props) {
   return (
     <Router>
       <Routes>
-        <Route
+        {/* <Route
           path="/"
-          element={<Login />}
-        />
+          // element={<Login />}
+        /> */}
         <Route element={<SidebarLayout />}>
           <Route
             path="/home"
