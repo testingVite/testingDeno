@@ -34,7 +34,6 @@ router
   .delete('/api/Connection', deleteConnection)
   .patch('/api/newConnection', updateConnection)
 
-
   //console
   .get('/api/handleQuery', getQuery)
   .post('/api/handleQuery', addQuery)
@@ -54,7 +53,7 @@ router
   .get('/cookieId', returnConnectionCookie)
 
   //verify jwt
-  .get('/jwt',jwt)
+  .get('/jwt', jwt)
   //test route for devs:
   .post('/api/test', async (ctx) => {
     if (!ctx.request.hasBody) {

@@ -56,7 +56,7 @@ export default function Login() {
       password,
     };
 
-    const response = await fetch('http://localhost:8000/api/signUp', {
+    const response = await fetch('/api/signUp', {
       credentials: 'include',
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
