@@ -24,7 +24,7 @@ jobs:
         run: deno task build
         
       - name: start server
-        run: deno task serve
+        run: deno task serve &
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
