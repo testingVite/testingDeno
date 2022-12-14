@@ -27,4 +27,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "testing-ite-testing-eno1"
+          root: dist
           entrypoint: http://deno.land/std@0.157.0/http/file_server.ts 
