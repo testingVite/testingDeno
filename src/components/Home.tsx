@@ -6,16 +6,16 @@ import denogresLogo from '../assets/denogres-logo.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function home() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    fetch('http://localhost:8000/jwt', { credentials: 'include' })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.success === false) {
-          navigate('/');
-        }
-      });
-  }, []);
+  // const navigate = useNavigate();
+  // useEffect(() => {
+  //   fetch('http://localhost:8000/jwt', { credentials: 'include' })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data.success === false) {
+  //         navigate('/');
+  //       }
+  //     });
+  // }, []);
   return (
     <div>
       {/* <NavBarGUI active="/gui/home" /> */}
