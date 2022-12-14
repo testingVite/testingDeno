@@ -7,13 +7,13 @@ const PORT = 8000;
 
 const app = await new Application();
 
-app.get('/api', async (ctx) => {
-  if (!ctx.request.hasBody) {
-    ctx.throw(415);
-  }
-  const reqBody = await ctx.request.body().value;
-  return reqBody;
-});
+// app.get('/api', async (ctx) => {
+//   if (!ctx.request.hasBody) {
+//     ctx.throw(415);
+//   }
+//   const reqBody = await ctx.request.body().value;
+//   return reqBody;
+// });
 app.use(errorHandler);
 app.use(
   oakCors({
