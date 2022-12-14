@@ -5,7 +5,7 @@ import errorHandler from './controllers/errorHandler.ts';
 
 const PORT = 8000;
 
-const app = new Application();
+const app = await new Application();
 
 app.get('/api', async (ctx) => {
   if (!ctx.request.hasBody) {
