@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: 'testing-ite-testing-eno1'
+          project: 'jamesdeno'
           root: dist
           entrypoint: http://deno.land/std@0.157.0/http/file_server.ts
