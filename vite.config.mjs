@@ -8,4 +8,7 @@ import 'npm:reactflow';
 import 'npm:html-to-image';
 export default defineConfig({
   plugins: [react()],
+  build: {
+    target: 'esnext',
+  },
 });
